@@ -42,7 +42,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #1a1332;
     padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
   }
 
   .header-logo {
@@ -177,7 +181,7 @@ body {
         max-width: 800px;
     }
 
-    .about-text span {
+    span {
         font-weight: 800;
         color: var(--color3);
     }
@@ -195,7 +199,7 @@ body {
         display: flex;
         gap: 35px;
         align-items: center;
-        width: 800px;
+        max-width: 800px;
     }
 
     .tec-info {
@@ -207,6 +211,63 @@ body {
 
     figure img {
        max-height: 40px;
+    }
+
+    /* CARDS */
+
+    #cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #33295356;
+      padding: 50px 20px;
+      max-width: 100%;
+      gap: 1.2rem;
+    }
+
+    #cards h2 {
+      font-size: 2rem;
+    }
+
+    .cartas-img {
+      width: 60%;
+      border-radius: 1rem;
+      -webkit-box-shadow: 3px 3px 30px 14px rgba(26,19,50,1);
+      -moz-box-shadow: 3px 3px 30px 14px rgba(26,19,50,1);
+      box-shadow: 3px 3px 30px 14px rgba(26,19,50,1);
+    }
+
+    .cartas {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1600px;
+    }
+
+     .image-link {
+       display: inline-block;
+       width: 60%;
+       transition: 1s all ease;
+     }
+
+     /* Estilo para la imagen */
+     .image-link img {
+       display: block;
+       width: 100%; 
+     }
+
+     .image-link:hover {
+      width: 70%;
+     }
+
+    .cartas-contenido {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      max-width: 100%;
+      flex-wrap: wrap;
     }
 
 /* =============================== MEDIAQUERIES =============================== */
@@ -255,12 +316,12 @@ body {
         }
     
         .hero-title {
-            font-size: 3rem;
+            font-size: 4rem;
         }
     
         .hero-text {
             max-width: 700px;
-            font-size: 1.2rem;
+            font-size: 1rem;
           }
     
           .hero__logo {
@@ -272,17 +333,24 @@ body {
             justify-content: center;
             align-items: center;
          }
+
+         .about-text {
+          max-width: 600px;
+         }
+
+         .image-link {
+          width: 75%;
+        }
       }
 
 
-      @media (max-width: 576px) {
-        
-        .hero-title {
-            font-size: 2.4rem;
-        }
+      @media (max-width: 576px) {        
+        .image-link {
+          width: 95%;
+        }  
 
-         .hero-text {
-            font-size: 1.09rem;
+        .image-link:hover {
+          width: 95%;
          }
       }
 
