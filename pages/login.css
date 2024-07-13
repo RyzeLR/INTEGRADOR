@@ -103,3 +103,9 @@ span {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 }
+
+@media (max-width:576px) {
+    .formulario {
+        width: 350px;
+    }
+}
