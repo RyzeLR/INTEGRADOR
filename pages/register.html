@@ -4,17 +4,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../mediaqueries.css" />
-    <link rel="stylesheet" href="./login.css">
-    <link rel="stylesheet" href="../ui.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="../ui.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>INTEGRADOR</title>
   </head>
   <body>
     <header class="header">
-        <a href="#"><i class="fa-brands fa-connectdevelop header-logo"></i></a>
+      <a href="#"><i class="fa-brands fa-connectdevelop header-logo"></i></a>
 
       <nav class="navbar">
         <label for="menu-toggle" class="menu-label">
@@ -37,38 +49,43 @@
 
     <main>
       <div class="formulario">
-          <form class="form">
-              <h1 class="form-title">Registrate</h1>
+        <form class="form-pages">
+          <h1 class="form-title-pages">Registrate</h1>
 
+          <!-- MAIL -->
+          <div class="form-input-pages">
+            <input type="email" placeholder="Email@gmail.com" required />
+            <i class="fa-solid fa-envelope"></i>
+          </div>
 
-              <!-- MAIL -->
-              <div class="form-input">
-                <input type="email" placeholder="Email@gmail.com" required>
-                <i class="fa-solid fa-envelope"></i>
-              </div>
+          <!-- USERNAME -->
+          <div class="form-input-pages">
+            <input type="text" placeholder="Usuario" required />
+            <i class="fa-solid fa-user"></i>
+          </div>
 
+          <!-- PASSWORD -->
 
-              <!-- USERNAME -->
-                  <div class="form-input">
-                      <input type="text" placeholder="Usuario" required>
-                      <i class="fa-solid fa-user"></i>
-                  </div>
+          <div class="form-input-pages">
+            <label>
+              <input type="password" placeholder="****" required />
+              <i class="fa-solid fa-lock"></i>
+            </label>
+          </div>
 
-              <!-- PASSWORD -->
-
-                  <div class="form-input">
-                      <label>
-                          <input type="password" placeholder="****" required>
-                          <i class="fa-solid fa-lock"></i>
-                      </label>
-                  </div>
-
-              <div class="form-final">
-                  <label class="conditions"><input type="checkbox">Acepto los terminos y condiciones</label>
-                  <a class="form-conditions" href="#">Leer los terminos y condiciones</a>
-                  <button class="button-form"><a href="../index.html">Registrarme</a></button>
-              </div>
-          </form>
+          <div class="form-final">
+            <label class="conditions"
+              ><input type="checkbox" />Acepto los terminos y condiciones</label
+            >
+            <a class="form-conditions" href="#"
+              >Leer los terminos y condiciones</a
+            >
+            <button class="button-form">
+              <a href="../index.html">Registrarme</a>
+            </button>
+          </div>
+        </form>
       </div>
-  </main>
-</body>
+    </main>
+  </body>
+</html>
