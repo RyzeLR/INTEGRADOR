@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <title>INTEGRADOR</title>
+  </head>
+  <body>
+    <header class="header">
+        <a href="#"><i class="fa-brands fa-connectdevelop header-logo"></i></a>
+
+      <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars burger-icon"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+
+        <ul class="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#cards">Cards</a></li>
+          <li><a href="#">Contact</a></li>
+          <div class="button button-navbar">
+              <a class="button-style" href="./login.html">Iniciar Secion</a>
+              <a class="button-style" href="./register.html">Registrarse</a>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- FORMULARIO -->
+
+    <main>
+        <div class="formulario">
+            <form class="form">
+                <h1 class="form-title">Inicia Secion</h1>
+                <!-- USERNAME -->
+                    <div class="form-input">
+                        <input type="text" placeholder="Usuario" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                <!-- PASSWORD -->
+
+                    <div class="form-input">
+                        <label>
+                            <input type="password" placeholder="****" required>
+                            <i class="fa-solid fa-lock"></i>
+                        </label>
+                    </div>
+
+                <div class="form-final">
+                    <button class="button-form"><a href="../index.html">Iniciar Secion</a></button>
+                <span>No tienes una cuenta? <a href="./register.html">Registrate</a></span>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
