@@ -127,6 +127,7 @@ body {
   height: 80vh;
   gap: 50px;
   margin: 2rem;
+  animation: left 2s ease 0s 1 normal forwards;
 }
 
 .hero-info {
@@ -199,6 +200,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  animation: rotate 2s ease 0s 1 normal forwards;
 }
 
 .about-title {
@@ -278,6 +280,8 @@ figure img {
   display: inline-block;
   width: 60%;
   transition: 1s all ease;
+  animation: rigth 2s ease 0s 1 normal forwards;
+  animation-delay: 0.5s;
 }
 
 /* Estilo para la imagen */
@@ -521,6 +525,43 @@ footer p {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rigth {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* =============================== MEDIAQUERIES =============================== */
 
 @media (max-width: 992px) {
