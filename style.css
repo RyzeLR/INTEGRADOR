@@ -6,8 +6,8 @@
 
   /* COLORES NORMALES */
 
-  --color-white: #ffff;
-  --color-black: #0000;
+  --color-white: #fff;
+  --color-black: #000;
 
   /* UTILIDADES */
 
@@ -165,7 +165,7 @@ html {
 
 .hero-button a:nth-child(1) {
   background-color: var(--color3);
-  color: 4;
+  color: var(--color4);
   font-weight: 600;
   outline: none;
 }
@@ -495,6 +495,7 @@ footer p {
 .redes i {
   font-size: 2rem;
   transition: 1s all;
+  cursor: pointer;
 }
 
 .redes i:hover {
@@ -565,6 +566,11 @@ footer p {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.button-style:hover,
+.list li a:hover {
+  transition: 0.3s ease-in-out;
 }
 
 /* =============================== MEDIAQUERIES =============================== */

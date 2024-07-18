@@ -1,51 +1,58 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>INTEGRADOR</title>
   </head>
   <body>
     <header class="header">
-        <a href="#"><i class="fa-brands fa-connectdevelop header-logo"></i></a>
-
+      <a href="#"><i class="fa-brands fa-connectdevelop header-logo"></i></a>
       <nav class="navbar">
         <label for="menu-toggle" class="menu-label">
           <i class="fa-solid fa-bars burger-icon"></i>
         </label>
         <input type="checkbox" id="menu-toggle" />
-
         <ul class="list">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#cards">Cards</a></li>
           <li><a href="#contacto">Contact</a></li>
           <div class="button button-navbar">
-              <a class="button-style" href="./pages/login.html">Iniciar Sesión</a>
-              <a class="button-style" href="./pages/register.html">Registrarse</a>
+            <a class="button-style" href="./pages/login.html">Iniciar Sesión</a>
+            <a class="button-style" href="./pages/register.html">Registrarse</a>
           </div>
         </ul>
       </nav>
     </header>
-
     <main class="main">
       <section id="hero">
         <div class="hero-info">
-          
-            <h1 class="hero-title">Ezequiel Bazan</h1>
+          <h1 class="hero-title">Ezequiel Bazan</h1>
           <span>Front-end Developer</span>
-          
           <p class="hero-text">
             Ofrezco el diseño y la estructura perfectos para tu página web. Mi
             objetivo es mejorar la experiencia del usuario para brindar la
             máxima comodidad y satisfacción a tus clientes.
           </p>
           <div class="hero-button button">
-            <a class="button-style button-main-1"  href="#contacto">Contactame</a>
+            <a class="button-style button-main-1" href="#contacto"
+              >Contactame</a
+            >
             <a class="button-style button-main-2" href="#about">Ver Mas</a>
           </div>
         </div>
@@ -53,143 +60,177 @@
           <i class="fa-solid fa-laptop-code hero__logo"></i>
         </div>
       </section>
-
-
-      <!-- SECTION 2 -->
-
       <section id="about">
-         <div class="about-info">
-            <h2 class="about-title">¿Quién soy?</h2>
-            <p class="about-text">
-              Soy Ezequiel Bazán, de La Rioja, y estudio <span>Desarrollo Web Full Stack</span>
-              en <span>NUCBA</span>. Hace tres meses comencé a aprender programación desde cero
-              y ahora estoy enfocado en el <span>Front-End</span>. Aunque al principio fue un
-              desafío, me he ido adaptando y espero seguir progresando, siempre
-              mirando hacia el futuro.
-            </p> 
-
-            <!-- ==================== -->
-
-            <div class="about-tecno">
-                <div class="tec-info">
-                      <h2 class="about-title">¿Qué tecnologías utilizo?</h2>
-                    <div class="tecnologias">
-                      <figure><img src="./aseets/svg/html-5-svgrepo-com.svg" alt=""></figure>
-                      <figure><img src="./aseets/svg/css-3-svgrepo-com.svg" alt=""></figure>
-                    </div>
-            </div>
-
-            <!-- ==================== -->
-
+        <div class="about-info">
+          <h2 class="about-title">¿Quién soy?</h2>
+          <p class="about-text">
+            Soy Ezequiel Bazán, de La Rioja, y estudio
+            <span>Desarrollo Web Full Stack</span> en <span>NUCBA</span>. Hace
+            tres meses comencé a aprender programación desde cero y ahora estoy
+            enfocado en el <span>Front-End</span>. Aunque al principio fue un
+            desafío, me he ido adaptando y espero seguir progresando, siempre
+            mirando hacia el futuro.
+          </p>
+          <div class="about-tecno">
             <div class="tec-info">
-                <h2 class="about-title">Lenguajes de programación</h2>
-                <div class="tecnologias">
-                    <figure><img src="./aseets/svg/javascript-svgrepo-com.svg" alt=""></figure>
-                    <figure><img src="./aseets/svg/python-svgrepo-com.svg" alt=""></figure>
-                    <figure><img src="./aseets/svg/php-svgrepo-com.svg" alt=""></figure>
-                    <figure><img src="./aseets/svg/react-svgrepo-com.svg" alt=""></figure>
-                    <figure><img src="./aseets/svg/java-svgrepo-com.svg" alt=""></figure>
-                    <figure><img src="./aseets/svg/node-js-svgrepo-com.svg" alt=""></figure>
-                </div>
-            </div>
-      </section>
-            
-        <!-- ==================== SECTION 3 ====================  -->
-
-        <section id="cards">
-          <h2>Mis Proyectos :)</h2>
-          <div class="cartas-contenido">
-            <!-- CARTA 1 -->
-            <div class="cartas">
-                <a href="https://e4-lilac.vercel.app/" target="_blank" class="image-link"><img src="./aseets/img/img-proyects/PROYECTO1.png" alt="" class="cartas-img"></a>
-            </div>
-            <!-- CARTA 2 -->
-            <div class="cartas">             
-              <a href="https://nazwer.vercel.app/" target="_blank" class="image-link"><img src="./aseets/img/img-proyects/PROYECTO2.png" alt="" class="cartas-img"></a>
-            </div>
-            <!-- CARTA 2 -->
-            <div class="cartas">              
-              <a href="https://portfolio-five-mu-64.vercel.app/" target="_blank" class="image-link"><img src="./aseets/img/img-proyects/PROYECTO 3.png" alt="" class="cartas-img"></a>
-            </div>
-          </div>
-        </section>
-
-        <!-- SECTION 4 -->
-
-        <section id="contacto">
-          <div class="contenido">
-            <div class="ubication-info">
-              <h2>Contact Us</h2>
-              <div class="ubicaciones">
-                <div class="ubication-1">
-                  <h3>La Rioja - Argentina</h3>
-                  <i class="fa-regular fa-envelope"><span>ezebazan2005@gmail.com</span></i>
-                  <i class="fa-solid fa-location-dot"
-                    ><span>Av. Ramirez de Velazco</span></i
-                  >
-                  <i class="fa-solid fa-phone"><span>+54 9 3804890916</span></i>
-                </div>
-              </div>
-              <div class="social">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
+              <h2 class="about-title">¿Qué tecnologías utilizo?</h2>
+              <div class="tecnologias">
+                <figure>
+                  <img src="./assets/svg/html-5-svgrepo-com.svg" alt="HTML5" />
+                </figure>
+                <figure>
+                  <img src="./assets/svg/css-3-svgrepo-com.svg" alt="CSS3" />
+                </figure>
               </div>
             </div>
-            <div class="wrapper">
-             
-                <form class="form">
-                  <h2 class="form-title">Contáctanos</h2>
-                  <div class="form-input">
-                    <label>Email<i class="fa-solid fa-envelope"></i></label>
-                    <input type="email" placeholder="Correo Electronico" required>
-                  </div>
-
-
-                  <div class="form-input">
-                    <label>Nombre de usuario<i class="fa-solid fa-user"></i></label>
-                  <input type="text" required placeholder="Usuario">
-                  </div>
-
-                  <div class="form-input">
-                    <label>Contraseña<i class="fa-solid fa-lock"></i></label>
-                    <input type="password" required placeholder="*****">
-                  </div>
-
-                  <div class="checkbox">
-                    <input type="checkbox" required>
-                    <label>Acepto los <a href="#">Terminos y condicones</a></label>
-                  </div>
-
-                  <div class="textarea">
-                    <label>Dejanos un mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                  </div>
-
-                  <div class="submit">
-                    <input type="submit" value="Enviar Form" class="submit-button">
-                  </div>
-                </form>
+            <div class="tec-info">
+              <h2 class="about-title">Lenguajes de programación</h2>
+              <div class="tecnologias">
+                <figure>
+                  <img
+                    src="./assets/svg/javascript-svgrepo-com.svg"
+                    alt="JavaScript"
+                  />
+                </figure>
+                <figure>
+                  <img src="./assets/svg/python-svgrepo-com.svg" alt="Python" />
+                </figure>
+                <figure>
+                  <img src="./assets/svg/php-svgrepo-com.svg" alt="PHP" />
+                </figure>
+                <figure>
+                  <img src="./assets/svg/react-svgrepo-com.svg" alt="React" />
+                </figure>
+                <figure>
+                  <img src="./assets/svg/java-svgrepo-com.svg" alt="Java" />
+                </figure>
+                <figure>
+                  <img
+                    src="./assets/svg/node-js-svgrepo-com.svg"
+                    alt="Node.js"
+                  />
+                </figure>
+              </div>
             </div>
-          </section>
-          <div class="iframe">
-            <h2 class="iframe-title"> Donde nos encontramos?</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55607.9357589889!2d-66.85577710000001!3d-29.414296949999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427d9873396f7e5%3A0x3e1c9c348972c7ca!2sLa%20Rioja!5e0!3m2!1ses-419!2sar!4v1720910010774!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-      </main>
-
-      <footer class="footer">
-        <div class="redes">
-          <i class="fa-brands fa-twitter"> <a href="#"></a></i>
-          <i class="fa-brands fa-linkedin"> <a href="#"></a></i>
-          <i class="fa-brands fa-github"> <a href="#"></a></i>
-          <i class="fa-brands fa-instagram"> <a href="#"></a></i>
-          <i class="fa-brands fa-twitch"> <a href="#"></a></i>
         </div>
-
-        <p>Created with <b>love</b> by <span>Ezequiel Bazan</span></p>
-
-        <div id="copyright" class="copyright">Copyright © 2024 Todos los derechos reservados <span>RYZELR</span></div>
-      </footer>
-    </body>
-  </html>
+      </section>
+      <section id="cards">
+        <h2>Mis Proyectos :)</h2>
+        <div class="cartas-contenido">
+          <div class="cartas">
+            <a
+              href="https://e4-lilac.vercel.app/"
+              target="_blank"
+              class="image-link"
+              ><img
+                src="./assets/img/img-proyects/PROYECTO1.png"
+                alt="Proyecto 1"
+                class="cartas-img"
+            /></a>
+          </div>
+          <div class="cartas">
+            <a
+              href="https://nazwer.vercel.app/"
+              target="_blank"
+              class="image-link"
+              ><img
+                src="./assets/img/img-proyects/PROYECTO2.png"
+                alt="Proyecto 2"
+                class="cartas-img"
+            /></a>
+          </div>
+          <div class="cartas">
+            <a
+              href="https://portfolio-five-mu-64.vercel.app/"
+              target="_blank"
+              class="image-link"
+              ><img
+                src="./assets/img/img-proyects/PROYECTO 3.png"
+                alt="Proyecto 3"
+                class="cartas-img"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section id="contacto">
+        <div class="contenido">
+          <div class="ubication-info">
+            <h2>Contact Us</h2>
+            <div class="ubicaciones">
+              <div class="ubication-1">
+                <h3>La Rioja - Argentina</h3>
+                <i class="fa-regular fa-envelope"
+                  ><span>ezebazan2005@gmail.com</span></i
+                >
+                <i class="fa-solid fa-location-dot"
+                  ><span>Av. Ramirez de Velazco</span></i
+                >
+                <i class="fa-solid fa-phone"><span>+54 9 3804890916</span></i>
+              </div>
+            </div>
+            <div class="social">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+          </div>
+          <div class="wrapper">
+            <form class="form">
+              <h2 class="form-title">Contáctanos</h2>
+              <div class="form-input">
+                <label>Email<i class="fa-solid fa-envelope"></i></label>
+                <input type="email" placeholder="Correo Electronico" required />
+              </div>
+              <div class="form-input">
+                <label>Nombre de usuario<i class="fa-solid fa-user"></i></label>
+                <input type="text" required placeholder="Usuario" />
+              </div>
+              <div class="form-input">
+                <label>Contraseña<i class="fa-solid fa-lock"></i></label>
+                <input type="password" required placeholder="*****" />
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" required />
+                <label>Acepto los <a href="#">Terminos y condicones</a></label>
+              </div>
+              <div class="textarea">
+                <label>Dejanos un mensaje</label>
+                <textarea cols="30" rows="10"></textarea>
+              </div>
+              <div class="submit">
+                <input
+                  type="submit"
+                  value="Enviar Form"
+                  class="submit-button"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="iframe">
+          <h2 class="iframe-title">Donde nos encontramos?</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55607.9357589889!2d-66.85577710000001!3d-29.414296949999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427d9873396f7e5%3A0x3e1c9c348972c7ca!2sLa%20Rioja!5e0!3m2!1ses-419!2sar!4v1720910010774!5m2!1ses-419!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="redes">
+        <i class="fa-brands fa-twitter"><a href="#"></a></i>
+        <i class="fa-brands fa-linkedin"><a href="#"></a></i>
+        <i class="fa-brands fa-github"><a href="#"></a></i>
+        <i class="fa-brands fa-instagram"><a href="#"></a></i>
+        <i class="fa-brands fa-twitch"><a href="#"></a></i>
+      </div>
+      <p>Made by Ezequiel Bazán</p>
+    </footer>
+  </body>
+</html>
