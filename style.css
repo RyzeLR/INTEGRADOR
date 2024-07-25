@@ -139,9 +139,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 85vh;
   gap: 50px;
-  animation: left 2s ease 0s 1 normal forwards;
+  animation: left 3s ease 0s 1 normal forwards;
   width: 100%;
 }
 
@@ -219,13 +219,13 @@ section {
 
 .about-info {
   display: flex;
-  animation: rotate 2s ease 0s 1 normal forwards;
 }
 
 .about-data {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  animation: rotate 4s ease 0s 1 normal forwards;
 }
 
 .about-title {
@@ -269,6 +269,20 @@ span {
   flex-direction: column;
   gap: 20px;
   align-items: flex-end;
+  animation: tarde 5s ease normal forwards;
+}
+
+@keyframes tarde {
+  0% {
+    opacity: 0;
+    display: none;
+    transform: translateX(400px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 figure img {
