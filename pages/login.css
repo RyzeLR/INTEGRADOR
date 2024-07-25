@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://images.hdqwalls.com/wallpapers/purple-moon-stars-buildings-city-minimal-4k-gp.jpg);
+  background-image: url(https://images.hdqwalls.com/wallpapers/black-white-curved-object-5k-yf.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -20,7 +20,7 @@ main {
 .formulario {
   width: 420px;
   background: rgba(255, 255, 255, 0.021);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
@@ -45,7 +45,7 @@ main {
   background: transparent;
   border: none;
   outline: none;
-  border: 2px solid #885d81;
+  border: 2px solid #808080;
   border-radius: 40px;
   font-size: 16px;
   color: white;
@@ -72,7 +72,7 @@ main {
   font-weight: 500;
   background-color: transparent;
   border: none;
-  outline: #885880 2px solid;
+  outline: #808080 2px solid;
   border-radius: 40px;
   width: 150px;
   font-size: 18px;
@@ -88,13 +88,13 @@ main {
 }
 
 span {
-  color: #b87eae;
+  color: #8f8f8f;
 }
 
 @media (max-width: 992px) {
   .list {
     background: rgba(255, 255, 255, 0);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(121, 121, 121, 0.37);
     backdrop-filter: blur(3.5px);
     -webkit-backdrop-filter: blur(3.5px);
     border-radius: 10px;
