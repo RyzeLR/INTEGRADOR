@@ -39,6 +39,11 @@ body {
   background-color: var(--color4);
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 html {
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -126,15 +131,18 @@ html {
   align-items: center;
 }
 
+section {
+  padding: 50px;
+}
+
 #hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   height: 80vh;
   gap: 50px;
-  margin: 3rem;
   animation: left 2s ease 0s 1 normal forwards;
+  width: 100%;
 }
 
 .hero-info {
@@ -144,7 +152,7 @@ html {
 }
 
 .hero-title {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 800;
 }
 
@@ -157,8 +165,18 @@ html {
   font-family: var(--opensans);
 }
 
+.hero-info,
+.icon {
+  flex: 1;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .hero__logo {
-  font-size: 20rem;
+  font-size: 22rem;
 }
 
 .hero-button a {
@@ -196,30 +214,28 @@ html {
 }
 
 #about {
-  padding: 50px 20px;
   width: 100%;
+  display: flex;
 }
 
 .about-info {
-  max-width: 1100px;
-  margin: auto;
+  display: flex;
+  animation: rotate 2s ease 0s 1 normal forwards;
+}
+
+.about-data {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  animation: rotate 2s ease 0s 1 normal forwards;
+  gap: 20px;
 }
 
 .about-title {
   font-size: 1.5rem;
-  text-align: center;
   font-weight: 800;
 }
 
 .about-text {
-  text-align: center;
-  max-width: 800px;
+  max-width: 740px;
   color: var(--text);
   letter-spacing: 2px;
   font-family: var(--opensans);
@@ -232,17 +248,20 @@ span {
 
 .tecnologias {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 30px;
-  font-size: 2rem;
 }
 
 .about-tecno {
   display: flex;
   gap: 20px;
-  align-items: center;
-  max-width: 800px;
+  width: fit-content;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.about-data,
+.about-tecno {
+  flex: 1;
 }
 
 .tec-info {
@@ -250,6 +269,7 @@ span {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: flex-end;
 }
 
 figure img {
@@ -260,11 +280,7 @@ figure img {
 
 #cards {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 50px 20px;
-  width: 100%;
   gap: 1.2rem;
 }
 
@@ -282,8 +298,6 @@ figure img {
 
 .cartas {
   display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 1600px;
 }
 
@@ -317,17 +331,13 @@ figure img {
 #contacto {
   display: flex;
   width: 100%;
-  padding: 30px;
   flex-direction: column;
 }
 
 .contenido {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 50px;
 }
 
 .ubication-info {
@@ -485,11 +495,11 @@ footer p {
   font-size: 1.4rem;
   letter-spacing: 2px;
   font-family: var(--opensans);
-  opacity: 80%;
 }
 
 .footer {
-  max-width: 100%;
+  max-width: 1200px;
+  margin: auto;
   padding: 30px;
   flex-wrap: wrap;
   background-color: #212121;
@@ -619,14 +629,24 @@ footer p {
     font-size: 1.2rem;
   }
 
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .icon {
     display: none;
   }
 
   .about-tecno {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .tec-info {
+    align-items: flex-start;
   }
 
   .about-text {
@@ -639,6 +659,13 @@ footer p {
 
   .image-link {
     width: 75%;
+  }
+
+  .iframe {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    margin-top: 20px;
   }
 }
 
